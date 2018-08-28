@@ -13,6 +13,18 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="헤더 파일\Node">
+      <UniqueIdentifier>{46accab2-5985-4ea8-82e5-3d3f0f18343f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="헤더 파일\Tree">
+      <UniqueIdentifier>{0534f70c-b11f-4138-bb61-746c0a383d3b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Node">
+      <UniqueIdentifier>{74764ec3-e3fc-4950-a86f-a084b3fcced1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Tree">
+      <UniqueIdentifier>{18b0b76e-6aec-4361-bb09-392a003fa890}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="MainHeader.h">
@@ -24,7 +36,22 @@
     <ClInclude Include="Trigger.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
-    <ClInclude Include="Condition.h">
+    <ClInclude Include="Condition\Node\ConditionNode.h">
+      <Filter>헤더 파일\Node</Filter>
+    </ClInclude>
+    <ClInclude Include="Condition\Node\ConditionOperand.h">
+      <Filter>헤더 파일\Node</Filter>
+    </ClInclude>
+    <ClInclude Include="Condition\Node\ConditionOperator.h">
+      <Filter>헤더 파일\Node</Filter>
+    </ClInclude>
+    <ClInclude Include="Condition\ConditionChecker.h">
+      <Filter>헤더 파일\Tree</Filter>
+    </ClInclude>
+    <ClInclude Include="TriggerHeader.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Reaction\ReactionHelper.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
   </ItemGroup>
@@ -35,5 +62,10 @@
     <ClCompile Include="Trigger.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Condition\Node\ConditionCheck.inl">
+      <Filter>헤더 파일</Filter>
+    </None>
   </ItemGroup>
 </Project>

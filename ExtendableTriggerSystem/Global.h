@@ -12,11 +12,16 @@
 #include <string>
 #include <tuple>
 #include <array>
+#include <initializer_list>
+#include <functional>
 
 
 
 template<typename T>
-constexpr int Type2Int(T type)
+constexpr std::underlying_type_t<T> Type2Int(T type)
 {
-	return std::underlying_type_t(type);
+	return static_cast<std::underlying_type_t<T>>(type);
 }
+
+template<size_t T>
+struct Int2Type { enum { Value = T }; };
